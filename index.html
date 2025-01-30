@@ -35,8 +35,8 @@
             extend: {
             colors: {
                 clifford: '#da373d',
-                'bike-primary': '#E76F51',
-                'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+                'cat-primary': '#FFDC26',
+                'cat-primary-bg': '#FFF9F4',
             }
             }
         }
@@ -46,7 +46,53 @@
 <body class="font-sora">
     
     <!-- Header Section -->
-    <header>
+    <header class="">
+        <!-- Navbar Section -->
+        <div class="lg:bg-cat-primary-bg">
+            <div class="navbar bg-base-100 border-b border-[#111111] md:container mx-auto lg:border-none lg:bg-cat-primary-bg">
+                <div class="navbar-start">
+                    <img class="cursor-pointer" src="./images/logo-header.png" alt="">
+                    <a class="text-xl hidden md:block pl-4 md:text-2xl font-normal cursor-pointer">Browse<span class="text-cat-primary">4</span>Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-xl font-normal">Find a pet</a></li>
+                    <li><a class="text-xl font-normal">Breeds</a></li>
+                    <li><a class="text-xl font-normal">Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex gap-4">
+                    <i class="hidden text-xl cursor-pointer lg:block fa-regular fa-bell"></i>
+                    <i class="hidden text-xl cursor-pointer lg:block fa-solid fa-magnifying-glass"></i>
+                    <button class="btn btn-outline border-cat-primary py-2 px-7 hidden text-xl font-normal lg:block text-black">Login</button>
+                    <button class="btn bg-cat-primary py-2 px-7 hidden text-xl font-normal lg:block">Register</button>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          <li><a>Find a pet</a></li>
+                          <li><a>Breeds</a></li>
+                          <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+
         
     </header>
 

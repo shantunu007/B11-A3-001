@@ -28,16 +28,9 @@
             font-family: "ADLaM Display", serif;
         }
 
-        /* .cat-bg {
-            background-image: url(./images/cat-big.png);
-            /* background-position-x: 80px; */
-            background-position-y: 150px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 100%;
-           
-        } */
+        .clip-custom {
+            clip-path: polygon(10% 0%, 90% 0%, 100% 30%, 80% 100%, 20% 100%, 0% 30%);
+        }
     </style>
 
     <script>
@@ -61,19 +54,19 @@
     <header class="">
         <!-- Navbar Section -->
         <div class="lg:bg-cat-primary-bg">
-            <div class="navbar border-b border-[#111111] md:container mx-auto lg:border-none lg:bg-cat-primary-bg">
-                <div class="navbar-start">
+            <div class="flex justify-between items-center border-b border-[#111111] md:container mx-auto lg:border-none lg:bg-cat-primary-bg">
+                <div class="flex items-center pl-4 py-3 md:pl-0 md:py-9">
                     <img class="cursor-pointer" src="./images/logo-header.png" alt="">
                     <a class="text-xl hidden md:block pl-4 md:text-2xl font-normal cursor-pointer">Browse<span class="text-cat-primary">4</span>Pets</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
                     <li><a class="text-xl font-normal">Find a pet</a></li>
                     <li><a class="text-xl font-normal">Breeds</a></li>
                     <li><a class="text-xl font-normal">Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end flex gap-4">
+                <div class="flex items-center gap-4">
                     <i class="hidden text-xl cursor-pointer lg:block fa-regular fa-bell"></i>
                     <i class="hidden text-xl cursor-pointer lg:block fa-solid fa-magnifying-glass"></i>
                     <button class="btn btn-outline border-cat-primary py-2 px-7 hidden text-xl font-normal lg:block text-black">Login</button>
@@ -107,7 +100,7 @@
 
         <!-- Banner Section -->
         <div class="banner">
-            <div class="px-4 mt-6 cat-bg relative md:container mx-auto md:my-24 md:h-[749px]">
+            <div class="px-4 mt-6 cat-bg relative md:px-0 md:container mx-auto md:my-24 md:h-[749px]">
                 
                 <div class="relative z-10">
                     <h1 class="text-3xl font-normal font-adlam-display lg:text-[3.5rem] lg:max-w-[681px] leading-normal">Pamper Your Pet, Because They Deserve the Bes</h1>
@@ -123,15 +116,15 @@
     </header>
 
     <!-- Main Section -->
-    <main class="my-40">
+    <main class="my-40 relative">
 
         <!-- Categories Section -->
         <section class="md:container mx-auto">
             <!-- Categories Title -->
-            <h2 class="font-adlam-display text-2xl font-normal pl-4 md:text-4xl">Browse By Categories</h2>
+            <h2 class="font-adlam-display text-2xl font-normal pl-4 md:pl-0 md:text-4xl">Browse By Categories</h2>
 
             <!-- Categories -->
-            <div class="grid grid-cols-2 gap-2 mt-12 px-4 md:grid-cols-6 md:gap-6">
+            <div class="grid grid-cols-2 gap-2 mt-12 px-4 md:px-0 md:flex justify-between">
 
                 <!-- Single Card 1 -->
                 <div class="card bg-card-primary py-9 w-44 md:w-52">
@@ -228,11 +221,11 @@
         <!-- Trending Products Section -->
         <section class="w-full my-16 md:mt-36 md:bg-cat-primary-bg h-[775px]">
             <div class="md:container mx-auto md:py-36">
-                <h2 class="font-adlam-display text-2xl font-normal pl-4 md:text-4xl">Trending Pet Products</h2>
-                <div class="mt-12 md:flex md:justify-between">
+                <h2 class="font-adlam-display text-2xl font-normal pl-4 md:pl-0 md:text-4xl">Trending Pet Products</h2>
+                <div class="mt-12 md:flex md:gap-16 md:justify-between">
 
                     <!-- Single Product Shop -->
-                    <div class="px-4">
+                    <div class="px-4 md:px-0">
                         <div class="card card-compact bg-card-primary md:pl-4 py-4 md:py-12 w-[357px] h-[339px] md:w-[460px] md:h-[402px] md:pr-20">    
                             <div class="card-body space-y-2">
                               <h2 class="card-title font-adlam-display font-normal md:text-3xl">T- Shirt For Dogs</h2>
@@ -251,7 +244,7 @@
                     <div class="grid pb-12 grid-cols-2 gap-2 md:grid-cols-3 md:gap-5 md:pb-0">
 
                         <!-- Product 1 -->
-                        <div class="flex gap-4 bg-white border ml-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[300px] md:ml-0 md:h-[118px] md:mt-0">
+                        <div class="flex gap-4 bg-white border ml-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[320px] md:ml-0 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/dog-cartoon.png" alt="dog">
                                 <img class="p-3 md:hidden" src="./images/pet-couch.png" alt="pet-couch">
@@ -267,7 +260,7 @@
                         </div>
 
                         <!-- Product 2 -->
-                        <div class="flex gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[300px] md:mr-4 md:h-[118px] md:mt-0">
+                        <div class="flex gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[320px] md:mr-4 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/fish-cartoon.png" alt="fish">
                                 <img class="p-3 block md:hidden" src="./images/pet-couch.png" alt="pet-couch">
@@ -283,7 +276,7 @@
                         </div>
 
                         <!-- Product 3 -->
-                        <div class="flex gap-4 bg-white border ml-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[300px] md:ml-0 md:h-[118px] md:mt-0">
+                        <div class="flex gap-4 bg-white border ml-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[320px] md:ml-0 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/bird-cartoon.png" alt="bird">
                                 <img class="p-3 block md:hidden" src="./images/pet-couch.png" alt="">
@@ -299,7 +292,7 @@
                         </div>
 
                         <!-- Product 4 -->
-                        <div class="flex gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[300px] md:mr-0 md:h-[118px] md:mt-0">
+                        <div class="flex gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[320px] md:mr-0 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/rabbit-cartoon.png" alt="rabbit">
                                 <img class="p-3 block md:hidden" src="./images/pet-couch.png" alt="">
@@ -315,7 +308,7 @@
                         </div>
 
                         <!-- Product 5 -->
-                        <div class="flex gap-4 bg-white border ml-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[300px] md:ml-0 md:h-[118px] md:mt-0">
+                        <div class="flex gap-4 bg-white border ml-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[320px] md:ml-0 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/bird-cartoon.png" alt="bird">
                                 <img class="p-3 block md:hidden" src="./images/pet-couch.png" alt="pet-couch">
@@ -331,7 +324,7 @@
                         </div>
 
                         <!-- Product 6 -->
-                        <div class="flex gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[300px] md:mr-0 md:h-[118px] md:mt-0">
+                        <div class="flex gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[320px] md:mr-0 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/pet-couch.png" alt="pet-couch">
                                 <img class="p-3 md:hidden" src="./images/pet-couch.png" alt="pet-couch">
@@ -346,7 +339,7 @@
                             </div>
                         </div>
                         <!-- Product 7 -->
-                        <div class="flex gap-4 bg-white border ml-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[300px] md:ml-0 md:h-[118px] md:mt-0">
+                        <div class="flex gap-4 bg-white border ml-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[320px] md:ml-0 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/fish-cartoon.png" alt="fish">
                                 <img class="p-3 block md:hidden" src="./images/pet-couch.png" alt="pet-couch">
@@ -362,7 +355,7 @@
                         </div>
 
                         <!-- Product 8 -->
-                        <div class="flex gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[300px] md:mr-0 md:h-[118px] md:mt-0">
+                        <div class="flex gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:w-[320px] md:mr-0 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/pet-couch.png" alt="pet-couch">
                                 <img class="p-3 block md:hidden" src="./images/pet-couch.png" alt="pet-couch">
@@ -378,7 +371,7 @@
                         </div>
 
                         <!-- Product 9 -->
-                        <div class="hidden gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:flex md:w-[300px] md:mr-0 md:h-[118px] md:mt-0">
+                        <div class="hidden gap-4 bg-white border mr-4 rounded-md w-[173px] h-[90px] py-4 pl-4 mt-10 md:flex md:w-[320px] md:mr-0 md:h-[118px] md:mt-0">
                             <div class="bg-cat-primary-bg w-[53px] rounded-lg h-[53px] md:w-[86px] md:h-[86px]">
                                 <img class="p-5 hidden md:block" src="./images/rabbit-cartoon.png" alt="rabbit">
                                 <img class="p-3 block md:hidden" src="./images/pet-couch.png" alt="pet-couch">
@@ -398,13 +391,59 @@
         </section>
 
 
+        <!-- Faq Section -->
+        <div class="text-center space-y-6 mt-64 mb-32 mx-4 md:mt-32 md:container md:mx-auto">
+            <h1 class="font-eb-garamond font-extrabold text-2xl lg:text-4xl">Dogs own space and cats own time</h1>
+            <p class="text-[#707070] text-sm lg:text-base">“Animals have come to mean so much in our lives. We live in a fragmented and disconnected culture. Politics are ugly, religion is struggling, technology is stressful, and the economy is unfortunate. What’s one thing that we have in our lives that we can depend on? A dog or a cat loving us unconditionally, every day, very faithfully.” — <span class="text-gray-700 text-2xl font-bold leading-relaxed">Jon Katz</span></p>
+        </div> 
+          
+        <div class="mx-4 -mb-32 md:flex items-center md:my-32 gap-8 md:container md:mx-auto">
+            <!-- Accordion -->
+            <div class="flex-1 space-y-6 justify-between">
+              <div class="collapse collapse-plus bg-base-200 p-5">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl lg:text-2xl font-extrabold font-eb-garamond">1. What’s the funniest thing your pet has ever done?</div>
+                <div class="collapse-content">
+                  <p class="text-sm lg:text-base text-[#707070]">Watching a large dog try to squeeze into a cat-sized box or a cat try to disappear behind a curtain that barely covers half of them.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 p-5">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl lg:text-2xl font-extrabold font-eb-garamond">1. If your favorite animal had a theme song, what would it be?</div>
+                <div class="collapse-content">
+                  <p class="text-sm lg:text-base text-[#707070]">"Don't Stop Me Now" by Quee or a sloth vibing to "Slow Ride"</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 p-5">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl lg:text-2xl font-extrabold font-eb-garamond">1. If you could train your pet to do one amazing trick, what would it be?</div>
+                <div class="collapse-content">
+                  <p class="text-sm lg:text-base text-[#707070]"> I’d love to train them to bring me snacks on command. </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 p-5">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl lg:text-2xl font-extrabold font-eb-garamond">1. Do you have any pets? Tell me about them!</div>
+                <div class="collapse-content">
+                  <p class="text-sm lg:text-base text-[#707070]">Puchung sounds like a sweet and laid-back cat! With his white fur and love for eating, he must be quite the charmer at mealtime</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Question Image -->
+            <div>
+              <img class="mt-24 md:w-[781px] clip-custom" src="./images/faq.png" alt="Cats and Dogs">
+            </div> 
+        </div>
+
+
         <!-- Pets Price -->
         <section class="my-24 pb-80 md:pb-96 md:container mx-auto">
-            <h2 class="font-adlam-display text-2xl font-normal pl-4 pt-36 pb-12 md:py-0 md:text-4xl">Everyday low Price</h2>
+            <h2 class="font-adlam-display text-2xl font-normal pl-4 md:pl-0 pt-36 pb-12 md:py-0 md:text-4xl">Everyday low Price</h2>
 
-            <div class="md:flex md:gap-6 justify-between md:mt-12">
+            <div class="md:flex md:gap-4 justify-between md:mt-12">
                 <!-- Dog Price -->
-                <div class="md:flex justify-between items-center rounded-xl mx-4 bg-gradient-to-tl from-purple-300 to-purple-50 w-[357px] h-[335px] md:w-[1084px] md:h-[480px]">
+                <div class="md:flex justify-between items-center rounded-xl mx-4 md:mx-0 bg-gradient-to-tl from-purple-300 to-purple-50 w-[357px] h-[335px] md:w-[1084px] md:h-[480px]">
                     <div class="pl-6 pt-9 md:py-32 md:pl-20 md:space-y-3">
                         <p class="text-xl font-normal hidden md:block">Under Price</p>
                         <h2 class="font-adlam-display font-normal text-xl md:text-3xl">Pet Grooming Mitt</h2>
@@ -417,7 +456,7 @@
                 </div>
 
                 <!-- Cat Price -->
-                <div class="mx-4 mt-6 md:mt-0">
+                <div class="mx-4 mt-6 md:mt-0 md:mx-0">
                     <div class="card card-compact bg-gradient-to-tl from-amber-200 to-amber-50 md:pl-4 py-4 md:py-12 w-[357px] h-[335px] md:w-[600px] md:h-[480px] md:pr-20">    
                         <div class="card-body space-y-2">
                           <h2 class="card-title font-adlam-display font-normal text-xl md:text-3xl">T- Shirt For Dogs</h2>
@@ -430,6 +469,22 @@
                 </div>
             </div>
         </section>
+
+        <!-- News Section -->
+
+        <section class="bg-[#FFF9F4] absolute -bottom-96 rounded-xl mx-4 md:left-48 md:container md:mx-0">
+            <div class="md:flex gap-32">
+                <div class="md:py-20 md:pl-28">
+                    <img class="w-4/6 mx-auto pt-8 md:w-auto" src="./images/cute-pet-mid.png" alt="">
+                </div>
+                <div class="text-center px-4 py-12 space-y-6 md:space-y-10 md:text-left md:flex-1 md:py-32 md:pl-20">
+                    <h2 class="font-adlam-display text-2xl font-normal md:text-4xl">Get Pawsome News!</h2>
+                    <p class="font-normal text-base md:text-xl md:mt-5 md:mb-10">Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="w-[312px] py-3 pl-3 text-sm md:py-5 md:mb-10 md:pl-5 md:w-[472px] rounded-lg" type="email" placeholder="Enter email..."><br>
+                    <button class="bg-yellow-300 rounded-md text-sm py-2 px-4 md:text-xl md:py-2 md:px-8">Subscribe</button>
+                </div>
+            </div>
+        </section>
         
     </main>
 
@@ -437,7 +492,7 @@
     <!-- Footer Section -->
     <footer class="w-full bg-yellow-200">
 
-        <div class="md:container mx-auto px-4 pt-72 pb-14 md:flex justify-between items-center md:pt-96 md:pb-36">
+        <div class="md:container mx-auto px-4 pt-72 pb-14 md:flex justify-between items-center md:px-0 md:pt-96 md:pb-36">
             <div>
                 <div class="md:flex">
                     <img src="./images/logo-footer.png" alt="">

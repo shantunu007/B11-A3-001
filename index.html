@@ -48,6 +48,7 @@
                 clifford: '#da373d',
                 'cat-primary': '#FFDC26',
                 'cat-primary-bg': '#FFF9F4',
+                'card-primary': '#F9DF8A',
             }
             }
         }
@@ -63,7 +64,7 @@
             <div class="navbar bg-base-100 border-b border-[#111111] md:container mx-auto lg:border-none lg:bg-cat-primary-bg">
                 <div class="navbar-start">
                     <img class="cursor-pointer" src="./images/logo-header.png" alt="">
-                    <a class="text-xl hidden md:block pl-4 md:text-2xl font-normal cursor-pointer">Browse<span class="text-cat-primary">4</span>Pets</a>
+                    <a class="text-xl hidden md:block pl-4 md:text-2xl md:pl-0 font-normal cursor-pointer">Browse<span class="text-cat-primary">4</span>Pets</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -104,7 +105,7 @@
               </div>
         </div>
 
-
+        <!-- Banner Section -->
         <div class="banner">
             <div class="px-4 mt-6 cat-bg relative md:container mx-auto md:my-24 md:h-[749px]">
                 
@@ -122,7 +123,110 @@
     </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main class="my-40">
+
+        <!-- Categories Section -->
+        <section class="md:container mx-auto">
+            <!-- Categories Title -->
+            <h2 class="font-adlam-display text-2xl font-normal pl-4 md:text-4xl md:pl-0">Browse By Categories</h2>
+
+            <!-- Categories -->
+            <div class="grid grid-cols-2 gap-2 mt-12 px-4 md:grid-cols-6 md:gap-6 md:px-0">
+
+                <!-- Single Card 1 -->
+                <div class="card bg-card-primary py-9 w-44 md:w-52">
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <figure class=" bg-white rounded-full w-28 h-28 mx-auto">
+                                <img src="./images/dog-cartoon.png" alt="">
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                <h2 class="card-title font-normal font-adlam-display text-base md:text-xl">Dog</h2>
+                                <p class="font-normal text-sm text-black md:text-base">3 items</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Card 2 -->
+                <div class="card bg-card-primary py-9 w-44 md:w-52">
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <figure class=" bg-white rounded-full w-28 h-28 mx-auto">
+                                <img src="./images/fish-cartoon.png" alt="">
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                <h2 class="card-title font-normal font-adlam-display text-base md:text-xl">Fish</h2>
+                                <p class="font-normal text-sm text-black md:text-base">3 items</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Card 3 -->
+                <div class="card bg-card-primary py-9 w-44 md:w-52">
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <figure class=" bg-white rounded-full w-28 h-28 mx-auto">
+                                <img src="./images/cat-cartoon.png" alt="">
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                <h2 class="card-title font-normal font-adlam-display text-base md:text-xl">Cat</h2>
+                                <p class="font-normal text-sm text-black md:text-base">3 items</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Card 4 -->
+                <div class="card bg-card-primary py-9 w-44 md:w-52">
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <figure class=" bg-white rounded-full w-28 h-28 mx-auto">
+                                <img src="./images/bird-cartoon.png" alt="">
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                <h2 class="card-title font-normal font-adlam-display text-base md:text-xl">Birds</h2>
+                                <p class="font-normal text-sm text-black md:text-base">3 items</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Card 5 -->
+                <div class="card bg-card-primary py-9 w-44 md:w-52">
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <figure class=" bg-white rounded-full w-28 h-28 mx-auto">
+                                <img src="./images/mouse-cartoon.png" alt="">
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                <h2 class="card-title font-normal font-adlam-display text-base md:text-xl">Small pet</h2>
+                                <p class="font-normal text-sm text-black md:text-base">3 items</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Card 6 -->
+                <div class="card bg-card-primary py-9 w-44 md:w-52">
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <figure class=" bg-white rounded-full w-28 h-28 mx-auto">
+                                <img src="./images/rabbit-cartoon.png" alt="">
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                <h2 class="card-title font-normal font-adlam-display text-base md:text-xl">Rabbit</h2>
+                                <p class="font-normal text-sm text-black md:text-base">2 items</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
 
 
     <!-- Footer Section -->
